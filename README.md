@@ -1,4 +1,5 @@
 # Jurassic Survival
+By [KetchupSaurus](https://github.com/KetchupSaurus)
 
 A dinosaur evolution survival game built with HTML5 Canvas and Electron.
 
