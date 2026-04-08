@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(adb devices:*)",
+      "Bash(npm --version)",
+      "Bash(cmd.exe /c \"adb devices\")",
+      "Bash(powershell.exe -Command \"adb devices\")",
+      "Bash(cmd.exe /c \"where adb 2>nul || echo NOT_FOUND\")",
+      "Bash(cmd.exe /c \"dir \"\"%LOCALAPPDATA%\\\\Android\\\\Sdk\\\\platform-tools\\\\adb.exe\"\" 2>nul && echo FOUND || echo NOT_FOUND\")",
+      "Bash(powershell.exe -Command \"Get-Command adb -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Source; if \\(Test-Path \"\"$env:LOCALAPPDATA\\\\Android\\\\Sdk\\\\platform-tools\\\\adb.exe\"\"\\) { echo ''ADB found at SDK path'' } else { echo ''ADB not at SDK path'' }\")",
+      "Bash(powershell.exe -Command \"Test-Path ''C:\\\\Users\\\\adamm\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\platform-tools\\\\adb.exe''\")",
+      "Bash(powershell.exe -Command \"& ''C:\\\\Users\\\\adamm\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\platform-tools\\\\adb.exe'' devices -l\")",
+      "Bash(npm install:*)",
+      "Bash(powershell.exe -Command \"Test-Path ''C:\\\\Program Files\\\\Android\\\\Android Studio\\\\bin\\\\studio64.exe''; Test-Path ''C:\\\\Program Files\\\\Android\\\\Android Studio\\\\bin\\\\studio.exe''; Get-Item ''C:\\\\Users\\\\adamm\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\build-tools'' -ErrorAction SilentlyContinue | Select-Object -ExpandProperty FullName\")",
+      "Bash(powershell.exe -Command \"Get-ChildItem ''C:\\\\Users\\\\adamm\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\build-tools'' | Select-Object -ExpandProperty Name\")",
+      "Bash(powershell.exe -Command \"npx cap add android 2>&1\")",
+      "Bash(cmd.exe /c \"npx cap add android\")",
+      "Bash(powershell.exe -Command \"Test-Path ''C:\\\\Users\\\\adamm\\\\Jurassic_Survival\\\\JurassicSurvival_Android\\\\android''\")",
+      "Bash(cmd.exe /c \"node node_modules/@capacitor/cli/bin/capacitor add android 2>&1\")",
+      "Bash(node node_modules/.bin/cap add android)",
+      "Bash(npm ls:*)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(list\\(d.get\\(''''packages'''',{}\\).keys\\(\\)\\)\\)\")",
+      "Bash(node -e \"const p=require\\(''./package-lock.json''\\); console.log\\(Object.keys\\(p.packages||{}\\).join\\(''\\\\n''\\)\\)\")",
+      "Bash(npm config:*)",
+      "Bash(node node_modules/@capacitor/cli/bin/capacitor add android)",
+      "Bash(cmd.exe /c \"gradlew.bat assembleDebug 2>&1\")",
+      "Bash(cmd.exe /c \"gradlew.bat assembleDebug\")",
+      "Bash(echo \"EXIT: $?\")",
+      "Bash(powershell.exe -Command \"Set-Location ''C:\\\\Users\\\\adamm\\\\Jurassic_Survival\\\\JurassicSurvival_Android\\\\android''; .\\\\gradlew.bat assembleDebug 2>&1\")",
+      "Bash(powershell.exe -Command \"Get-ChildItem ''C:\\\\Program Files\\\\Android\\\\Android Studio\\\\jbr'' -ErrorAction SilentlyContinue | Select-Object FullName; Get-ChildItem ''C:\\\\Program Files\\\\Android\\\\Android Studio\\\\jre'' -ErrorAction SilentlyContinue | Select-Object FullName\")",
+      "Bash(powershell.exe -Command \":*)",
+      "Bash(powershell.exe -Command \"Get-ChildItem ''C:\\\\Users\\\\adamm\\\\Jurassic_Survival\\\\JurassicSurvival_Android\\\\android\\\\app\\\\build\\\\outputs\\\\apk\\\\debug\\\\'' | Select-Object Name, Length\")",
+      "Bash(powershell.exe -Command \"Get-Item ''C:\\\\Users\\\\adamm\\\\Jurassic_Survival\\\\JurassicSurvival_Android\\\\android\\\\app\\\\build\\\\outputs\\\\apk\\\\debug\\\\app-debug.apk'' | Select-Object Name, Length, LastWriteTime\")"
+    ]
+  }
+}
