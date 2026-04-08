@@ -1,3 +1,4 @@
+HEAD
 # Jurassic Survival
 By [KetchupSaurus](https://github.com/KetchupSaurus)
 
@@ -51,3 +52,7 @@ Output will be in the `dist/` folder.
 
 ## Two Player Mode
 Select **2 Players** on the start screen. Both players share a score but have independent HP and evolution. The game ends when both players are defeated.
+=======
+# jurassic-survival
+Drakes first game
+db209d5de4a46bcabe33d2d6d7cd29e5133b5b9f
